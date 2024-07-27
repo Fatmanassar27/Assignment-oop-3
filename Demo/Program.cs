@@ -1,4 +1,6 @@
-﻿using Demo.Polymorphism;
+﻿using Demo.Binging;
+using Demo.Polymorphism;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Demo
 {
@@ -27,6 +29,14 @@ namespace Demo
         public static double sum(double x, int y)
         {
             return x + y;
+        }
+        #endregion
+
+        #region Binding
+        public static void ProcessEmployee (Employee employee)
+        {
+            employee.GetEmployeeType();
+            employee.GetEmployeeData();
         }
         #endregion
         static void Main(string[] args)
@@ -68,7 +78,44 @@ namespace Demo
             //t2.fun02();
             #endregion
 
+            #region Binding
+            //TypeA RefBase;
+            //RefBase = new TypeB(15,30);
+            //RefBase.fun01();
+            //RefBase.fun02();
+            #endregion
 
+            #region Not Binding
+            //TypeB t1 = new TypeA(1);
+            //TypeB t1 = (TypeB)new TypeA(1);
+            //Console.WriteLine(t1.A);
+            //Console.WriteLine(t1.B);
+
+            //TypeA t1 = new TypeB(1,2);
+            //TypeB t2 = (TypeB) t1;
+            //Console.WriteLine(t2.A);
+            //Console.WriteLine(t2.B);
+            #endregion
+
+            #region Binding 
+            //FullTimeEmployee fullTimeEmployee = new FullTimeEmployee(1,"Fatma",23,5000);
+            //ProcessEmployee(fullTimeEmployee);
+
+            //PartTimeEmployee partTimeEmployee = new PartTimeEmployee()
+            //{
+            //    Id = 1,
+            //    Age = 23,
+            //    Name = "Ahmed",
+            //    CountofHours = 12,
+            //    HourRate = 2.2M
+            //};
+
+            //ProcessEmployee(partTimeEmployee);
+
+            #endregion
+
+            #region 
+            #endregion
         }
     }
 }
