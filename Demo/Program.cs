@@ -1,4 +1,6 @@
-﻿namespace Demo
+﻿using Demo.Polymorphism;
+
+namespace Demo
 {
     internal class Program
     {
@@ -56,7 +58,14 @@
             //Console.WriteLine("*******************");
             #endregion
 
-            #region 
+            #region Polymorphism [overriding]
+            //TypeA t1 = new TypeA (10) ;
+            //t1.fun01();
+            //t1.fun02();
+            //Console.WriteLine("************");
+            //TypeB t2 = new TypeB(10,20);
+            //t2.fun01();
+            //t2.fun02();
             #endregion
 
 
