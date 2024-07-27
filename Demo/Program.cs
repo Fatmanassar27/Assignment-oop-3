@@ -114,7 +114,29 @@ namespace Demo
 
             #endregion
 
-            #region 
+            #region Binding
+            //TypeA T1 = new TypeC(1,2,3);
+            //T1.fun01();
+            //T1.fun02();
+
+            //TypeB T2 = new TypeC(1,2,3);
+            //T2.fun01();
+            //T2.fun02();
+
+
+            //TypeA typeA = new TypeE (1,2,3,4,5);
+            //TypeB typeB = new TypeE (1,2,3,4,5);
+            //TypeC typeC = new TypeE (1,2,3,4,5);
+            //TypeD typeD = new TypeE (1,2,3,4,5);
+            //TypeE typeE = new TypeE (1,2,3,4,5);
+
+            //typeA.fun02();
+            //typeB.fun02();
+            //typeC.fun02();
+            //typeD.fun02();
+            //typeE.fun02();
+
+
             #endregion
         }
     }

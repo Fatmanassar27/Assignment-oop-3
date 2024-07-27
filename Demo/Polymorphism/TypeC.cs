@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Demo.Polymorphism
 {
-    internal class TypeB : TypeA
+    internal class TypeC : TypeB
     {
 
-        public int B { get; set; }
-        public TypeB(int a ,int b) : base(a)
+        public int C {  get; set; }
+        public TypeC(int a , int b , int c) : base(a,b)
         {
-            B = b;
+            C = c;
         }
         public new void fun01()
         {
-            Console.WriteLine("I am Derived [Child]");
+            Console.WriteLine("I am Derived [Grand Child]");
         }
         override public void fun02()
         {
-            Console.WriteLine($"Type B : A = {A}   B = {B}");
+            Console.WriteLine($"Type C : A = {A}   B = {B}   C = {C}");
         }
     }
 }
